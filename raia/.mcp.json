@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "raia": {
+      "type": "http",
+      "url": "${RAIA_MCP_URL:-https://api.raia.ee/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${RAIA_API_KEY}"
+      }
+    }
+  }
+}

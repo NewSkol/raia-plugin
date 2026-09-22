@@ -1,0 +1,26 @@
+{
+  "name": "raia",
+  "owner": {
+    "name": "RAIA"
+  },
+  "metadata": {
+    "description": "Ask your own Claude about your company's books in RAIA. Read only: the figures come from RAIA's engine, never from the model."
+  },
+  "plugins": [
+    {
+      "name": "raia",
+      "source": "./raia",
+      "description": "Your company's books in RAIA, from your own Claude: what it owes, who owes it, the balance sheet, VAT, and what needs you. Read only.",
+      "version": "0.1.0",
+      "category": "accounting",
+      "keywords": [
+        "accounting",
+        "estonia",
+        "vat",
+        "kmd",
+        "bookkeeping",
+        "raamatupidamine"
+      ]
+    }
+  ]
+}

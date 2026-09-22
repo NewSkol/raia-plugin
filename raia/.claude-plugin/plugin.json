@@ -1,0 +1,13 @@
+{
+  "name": "raia",
+  "displayName": "RAIA",
+  "version": "0.1.0",
+  "description": "Your company's books in RAIA, from your own Claude: what it owes, who owes it, the balance sheet, VAT, and what needs you. Read only. Every figure is computed by RAIA's engine; the model reads and explains.",
+  "author": {
+    "name": "RAIA",
+    "url": "https://raia.ee"
+  },
+  "homepage": "https://raia.ee",
+  "license": "UNLICENSED",
+  "keywords": ["accounting", "estonia", "vat", "kmd", "bookkeeping"]
+}
