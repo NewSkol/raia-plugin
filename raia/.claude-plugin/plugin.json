@@ -8,6 +8,13 @@
     "url": "https://raia.ee"
   },
   "homepage": "https://raia.ee",
-  "license": "UNLICENSED",
-  "keywords": ["accounting", "estonia", "vat", "kmd", "bookkeeping"]
+  "license": "MIT",
+  "keywords": [
+    "accounting",
+    "estonia",
+    "vat",
+    "kmd",
+    "bookkeeping"
+  ],
+  "repository": "https://github.com/NewSkol/raia-plugin"
 }

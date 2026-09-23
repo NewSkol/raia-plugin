@@ -17,9 +17,9 @@ A key is a long line of text starting with `raia_`. It opens **one company's**
 books, as you, for reading. RAIA gives it to you once and keeps only a
 fingerprint of it, so store it the way you store a password.
 
-Today a key is made by RAIA's operator; ask for one and say which company.
-(For the operator: `raia mcp:key --company "Company name" --post`, with
-`--user their@email` if the key is for somebody other than you.)
+Today a key is made by RAIA's operator: write to info@raia.ee and say which
+company. (For the operator: `ops/raia mcp:key --company "Company name" --post`,
+with `--user their@email` if the key is for somebody other than you.)
 
 ## 2. Put the key where Claude Code can see it
 
@@ -34,16 +34,15 @@ if you use bash, the file is `~/.bashrc`.)
 
 ## 3. Install the plugin
 
-You have a folder called `plugin` from RAIA (it contains a `raia` folder and a
-`.claude-plugin` folder). In the new terminal:
+In the new terminal:
 
 ```sh
-claude plugin marketplace add /path/to/that/plugin
+claude plugin marketplace add NewSkol/raia-plugin
 claude plugin install raia@raia
 ```
 
 Both print a line ending in a tick mark. `claude plugin list` should now show
-`raia@raia`, version 0.1.0, enabled.
+`raia@raia`, enabled.
 
 ## 4. Ask
 
@@ -106,3 +105,14 @@ Type `/mcp` inside Claude Code. The RAIA server is listed as `plugin:raia:raia`.
 Ask RAIA to stop it. It stops working on the next question anybody asks with
 it. (For the operator: `raia mcp:keys --company "Company name"` lists them,
 and `raia mcp:key --revoke raia_XXXXXXX --post` stops one.)
+
+## What this plugin is, and is not
+
+The plugin is packaging: which questions RAIA can answer, and how to reach it.
+It holds no tax rate, no form line and no rule, and it never will, because
+those live in RAIA's engine with the date each one took effect, and a copy in
+a text file is a copy that goes stale. Ask RAIA; do not read it off a page.
+
+It is published under the MIT licence so that an accountant can read it, fork
+it and shape it to their practice. The books, the engine and the documents
+stay in RAIA.
