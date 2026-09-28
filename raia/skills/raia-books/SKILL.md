@@ -39,8 +39,11 @@ fits; call two when the question has two halves.
 |---|---|
 | `payables` | what the company owes its suppliers, and to whom; is a supplier paid |
 | `receivables` | who owes the company, and how much; has a customer paid |
-| `balance_sheet` | where the company stands on a date: the bank, assets, everything owed, equity |
-| `trial_balance` | what moved between two dates: revenue this year, spending in a month |
+| `balance_sheet` | where the company stands on a date: the bank, assets, everything owed, equity with this year's result on its own line |
+| `profit_and_loss` | revenue, costs and profit or loss for a period or a financial year, every total computed |
+| `period_status` | which months are locked or still open, and whether a financial year is locked |
+| `report_pdf` | the balance sheet, the income statement or both as a PDF to send to a funder or a bank |
+| `trial_balance` | what moved between two dates, account by account, with no totals |
 | `fixed_asset_register` | what the company owns and what it is worth now |
 | `chart_of_accounts` | which accounts exist and what they are for |
 | `check_the_books` | whether the books agree with the bank to the cent, and what the audit finds |
@@ -66,6 +69,11 @@ fits; call two when the question has two halves.
 "What does the company owe?" is `payables` first: its opening figure is the
 answer, and it names the suppliers. If the person means everything owed,
 taxes and loans included, `balance_sheet` gives that too.
+
+"What was our turnover, what did we make?" is `profit_and_loss`, not
+`trial_balance`: it gives the totals, so nothing has to be added up. Give it
+the `financial_year` when the question names a year, because not every
+company's year starts in January.
 
 ## How to answer
 
