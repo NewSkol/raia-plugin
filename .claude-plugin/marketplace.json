@@ -11,7 +11,7 @@
       "name": "raia",
       "source": "./raia",
       "description": "Your company's books in RAIA, from your own Claude: what it owes, who owes it, the balance sheet, VAT, and what needs you. Read only.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "category": "accounting",
       "keywords": [
         "accounting",
